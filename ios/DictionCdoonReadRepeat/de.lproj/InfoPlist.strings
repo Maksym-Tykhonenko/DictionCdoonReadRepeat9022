@@ -1,0 +1,3 @@
+"NSMicrophoneUsageDescription" = "Diction Crown nutzt das Mikrofon, um deine Stimme für die Aussprache-Prüfung und das Rückwärts-Stimme-Spiel aufzunehmen.";
+"NSSpeechRecognitionUsageDescription" = "Die Spracherkennung vergleicht das Gesagte mit dem Text, damit du siehst, welche Wörter du verbessern kannst.";
+"NSPhotoLibraryAddUsageDescription" = "Speichere deine Videos aus dem Rückwärts-Stimme-Spiel in deiner Fotomediathek.";

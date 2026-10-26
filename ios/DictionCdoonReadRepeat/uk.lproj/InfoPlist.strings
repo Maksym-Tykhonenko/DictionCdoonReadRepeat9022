@@ -1,0 +1,3 @@
+"NSMicrophoneUsageDescription" = "Diction Crown використовує мікрофон, щоб записувати ваш голос для перевірки вимови та гри «Голос навпаки».";
+"NSSpeechRecognitionUsageDescription" = "Розпізнавання мовлення порівнює сказане з текстом, щоб ви бачили, які слова варто покращити.";
+"NSPhotoLibraryAddUsageDescription" = "Зберігайте відео з гри «Голос навпаки» у свою фототеку.";

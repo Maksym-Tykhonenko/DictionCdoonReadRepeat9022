@@ -1,0 +1,3 @@
+"NSMicrophoneUsageDescription" = "O Diction Crown usa o microfone para gravar sua voz na verificação de pronúncia e no jogo Voz ao Contrário.";
+"NSSpeechRecognitionUsageDescription" = "O reconhecimento de fala compara o que você disse com o texto para mostrar quais palavras melhorar.";
+"NSPhotoLibraryAddUsageDescription" = "Salve seus vídeos do jogo Voz ao Contrário na sua fototeca.";
