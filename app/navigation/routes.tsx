@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useLibrary } from '../hooks/useLibrary';
 import { useSpeeches } from '../hooks/useSpeeches';
 import { BootLoaderScreen } from '../screens/BootLoaderScreen';
@@ -24,24 +24,12 @@ import type { RootScreenProps } from './types';
  * and turn navigation into the `onBack` / `onDone` props the screens use.
  */
 
-const LOADER_MIN_MS = 2100;
-
-export function LoaderRoute({ navigation }: RootScreenProps<'Loader'>) {
-  const { ready, introDone } = useLibrary();
-  const [minElapsed, setMinElapsed] = useState(false);
-
-  // Keep the themed loader on screen for a moment instead of flashing.
-  useEffect(() => {
-    const t = setTimeout(() => setMinElapsed(true), LOADER_MIN_MS);
-    return () => clearTimeout(t);
-  }, []);
-
-  useEffect(() => {
-    if (ready && minElapsed) {
-      navigation.replace(introDone ? 'Main' : 'Intro');
-    }
-  }, [ready, minElapsed, introDone, navigation]);
-
+/**
+ * Plain themed loader. It is rendered by the gate in RootNavigator (outside
+ * the stack), so it must not use navigation — the gate decides when to swap
+ * it for the stack.
+ */
+export function LoaderRoute() {
   return <BootLoaderScreen />;
 }
 
